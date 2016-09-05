@@ -1,1 +1,9 @@
-ด้วยองค์การบริหารส่วนจังหวัดอุดรธานี ได้จัดทำโครงการฝึกอบรมส่งเสริมอาชีพเพื่อแก้ไขปัญหาความยากจน ประจำปีงบประมาณ 2559 แก่ประชาชนในจังหวัดอุดรธานี โดยมีวัตถุประสงค์เพื่อพัฒนาผลิตภัณฑ์ ประเภทเกษตร หัตถกรรม พัฒนาบรรจุภัณฑ์สินค้าเพื่อเสร้างนวัตกรรมเพิ่มมุลค่าให้ผลิตภัณฑ์  รวมทั้งการเพิ่มความรู้การตลาดแต่กลุ่มอาชีพในอำเภอเพ็ญ  และอำเภอกุดจับ จังหวัดอุดรธานี
+# CodeIgniter 2
+Open Source PHP Framework (originally from EllisLab)
+
+For more info, please refer to the user-guide at http://www.codeigniter.com/userguide2/  
+(also available within the download package for offline use)
+
+**WARNING:** *CodeIgniter 2.x is no longer under development and only receives security patches until October 31st, 2015.
+Please update your installation to the latest CodeIgniter 3.x version available
+(upgrade instructions [here](http://www.codeigniter.com/userguide3/installation/upgrade_300.html)).*
