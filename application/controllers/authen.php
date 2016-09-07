@@ -22,7 +22,7 @@ class Authen extends CI_Controller {
 			$session_data = $this->session->userdata('session_data');
 			//print_r($session_data);
 			// redirect('home','refresh');
-			switch ($session_data['m_type']) {
+			switch ($session_data['mem_type']) {
 				case '1':
 				echo "1",'admin';
 				break;
@@ -36,7 +36,7 @@ class Authen extends CI_Controller {
 		}else{
 			//redirect('home/login','refresh');
 			//redirect(site_url('home/login',$error="NO"));
-			$massage = " เข้าสู่ระบบผิดพลาด !!!";
+			$massage = " เข้าสู่ระบบผิดพลาด email หรือ รหัสผ่าน ไม่ถูกต้อง!!!";
 			$url ="#login";
 			$this->alert($massage, $url);
 			exit();
