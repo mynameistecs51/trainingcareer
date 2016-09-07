@@ -17,14 +17,22 @@ class Authen extends CI_Controller {
 		$this->form_validation->set_rules('loginPassword','Password','trim|required|xss_clean|callback_check_database');
 
 		if($this->form_validation->run() === FALSE){
-			redirect('dashboard/','refresh');
-		}elseif($this->session->userdata('session_data')){
-			$session_data = $this->session->userdata('session_data');
+			// redirect('dashboard/#login','refresh');
+			$massage = " ลงชื่อเข้าใช้ระบบผิดพลาด";
+			$url = "dashboard/#login";
+			$this->alert($massage, $url);
+			exit();
+
+		}else{
+			$session_data = $this->session->userdata('mem_type');
 			//print_r($session_data);
 			// redirect('home','refresh');
-			switch ($session_data['mem_type']) {
+			switch ($session_data) {
 				case '1':
-				echo "1",'admin';
+				// echo "<pre>";
+				// echo $session_data;
+				// echo  anchor('authen/logout', 'Logout');
+				redirect('dashboard','refresh');
 				break;
 				case '2':
 				echo "2",'member';
@@ -33,13 +41,6 @@ class Authen extends CI_Controller {
 				redirect('dashboard','refresh');
 				break;
 			}
-		}else{
-			//redirect('home/login','refresh');
-			//redirect(site_url('home/login',$error="NO"));
-			$massage = " เข้าสู่ระบบผิดพลาด email หรือ รหัสผ่าน ไม่ถูกต้อง!!!";
-			$url ="#login";
-			$this->alert($massage, $url);
-			exit();
 		}
 	}
 
@@ -56,17 +57,26 @@ class Authen extends CI_Controller {
 				$sess_array = array(
 					'id_member' =>$row_result->id_member,
 					'mem_email' => $row_result->mem_email,
-					'mem_pass' => $row_result->mem_pass,
 					'mem_name' => $row_result->mem_name,
 					'mem_lastName' => $row_result->mem_lastName,
 					'mem_tel' => $row_result->mem_tel,
 					'mem_type' => $row_result->mem_type,
 					);
-				$this->session->set_userdata('session_data',$sess_array);
+				$this->session->set_userdata($sess_array);
 			}
 		}else{
-			$this->form_validation->set_message('check_database','ลงชื่อเข้าใช้ระบบผิดพลาด');
+			// $this->form_validation->set_message('check_database','ลงชื่อเข้าใช้ระบบผิดพลาด');
+			$massage = " Username หรือ Password ผิดพลาด !!";
+			$url = "dashboard/#login";
+			$this->alert($massage, $url);
+			exit();
 		}
+	}
+
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect('dashboard','refresh');
 	}
 
 	public function regis()
@@ -89,6 +99,7 @@ class Authen extends CI_Controller {
 		$this->alert($massage, $url);
 		exit();
 	}
+
 
 	public function alert($massage, $url)
 	{

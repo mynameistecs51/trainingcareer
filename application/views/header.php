@@ -71,7 +71,7 @@
       						<a class="page-scroll" href="#login">เข้าสู่ระบบ</a>
       					</li>
       					<li>
-      					<a class="page-scroll" href="#regis">สมัครสมาชิก</a>
+      						<a class="page-scroll" href="#regis">สมัครสมาชิก</a>
       					</li>
       				</ul>
       			</div>
