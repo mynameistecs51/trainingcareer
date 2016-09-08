@@ -48,7 +48,7 @@ class Template{
 	<body id="page-top" class="index">
 
 		<!-- Navigation -->
-		<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top" style=" background-color:#000000; opacity:0.7;">
+		<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top" style=" background-color:#000000; opacity:0.7;width:100%">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header page-scroll">
@@ -68,12 +68,15 @@ class Template{
 		</nav>
 
 		<!-- Header -->
-		<header>
+		<header >
 			<div class="container">
 				<div class="intro-text">
-					<div class="intro-lead-in btn btn-info" >โครงการฝึกอบรมส่งเสริมอาชีพเพื่อแก้ไขปัญหาความยากจน <br>ประจำปีงบประมาณ 2559 แก่ประชาชนในจังหวัดอุดรธานี</div>
-					<div class="intro-heading" >โดย อบจ.อุดรธานี</div>
-					<a href="#services" class="page-scroll btn btn-xl">ยินดีต้อนรับ</a>
+					<div style="background-color:gray;opacity:0.7;border-radius:10px 10px 10px 10px;display:block;">
+						<div class="intro-lead-in" style="margin-top:-10%">โครงการฝึกอบรมส่งเสริมอาชีพเพื่อแก้ไขปัญหาความยากจน <br>ประจำปีงบประมาณ 2559 แก่ประชาชนในจังหวัดอุดรธานี
+						</div>
+						<div class="intro-heading " >โดย อบจ.อุดรธานี</div>
+					</div>
+					<a href="#services" class="page-scroll btn btn-info btn-xl " style="background-color:#24cdd4;">ยินดีต้อนรับ</a>
 				</div>
 			</div>
 		</header>
@@ -82,7 +85,6 @@ class Template{
 	public function getFooter($base_url)
 	{
 		return '
-
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -162,10 +164,13 @@ public function menu()
 				<a class="page-scroll" href="#portfolio">Portfolio</a>
 			</li>
 			<li>
-				<a class="page-scroll" href="#about">ถามตอบ</a>
+				<a class="page-scroll" href="#">ถามตอบ</a>
 			</li>
 			<li>
-				<a class="page-scroll" href="#team">เกี่ยวกับ</a>
+				<a class="page-scroll" href="#about">เกี่ยวกับ</a>
+			</li>
+			<li>
+				<a class="page-scroll" href="#team">คณะทำงาน</a>
 			</li>
 			<li>
 				<a class="page-scroll" href="#contact">ข้อมูลติดต่อ</a>
@@ -193,11 +198,14 @@ public function menu()
 			<a class="page-scroll" href="#portfolio">Portfolio</a>
 		</li>
 		<li>
-			<a class="page-scroll" href="#about">ถามตอบ</a>
-		</li>
-		<li>
-			<a class="page-scroll" href="#team">เกี่ยวกับ</a>
-		</li>
+				<a class="page-scroll" href="#">ถามตอบ</a>
+			</li>
+			<li>
+				<a class="page-scroll" href="#about">เกี่ยวกับ</a>
+			</li>
+			<li>
+				<a class="page-scroll" href="#team">คณะทำงาน</a>
+			</li>
 		<li>
 			<a class="page-scroll" href="#contact">ข้อมูลติดต่อ</a>
 		</li>
