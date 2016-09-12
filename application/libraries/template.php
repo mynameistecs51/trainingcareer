@@ -80,11 +80,13 @@ class Template{
 				</div>
 			</div>
 		</header>
+
 		';
 	}
 	public function getFooter($base_url)
 	{
 		return '
+
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -198,14 +200,14 @@ public function menu()
 			<a class="page-scroll" href="#portfolio">Portfolio</a>
 		</li>
 		<li>
-				<a class="page-scroll" href="#">ถามตอบ</a>
-			</li>
-			<li>
-				<a class="page-scroll" href="#about">เกี่ยวกับ</a>
-			</li>
-			<li>
-				<a class="page-scroll" href="#team">คณะทำงาน</a>
-			</li>
+			<a class="page-scroll" href="#">ถามตอบ</a>
+		</li>
+		<li>
+			<a class="page-scroll" href="#about">เกี่ยวกับ</a>
+		</li>
+		<li>
+			<a class="page-scroll" href="#team">คณะทำงาน</a>
+		</li>
 		<li>
 			<a class="page-scroll" href="#contact">ข้อมูลติดต่อ</a>
 		</li>

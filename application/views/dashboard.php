@@ -1,7 +1,7 @@
 <?php echo $header;?>
 
 <!-- Services Section -->
-<section id="services" >
+<section id="services">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
@@ -778,4 +778,5 @@
 				</div>
 			</div>
 		</div>
+
 		<?php echo $footer;?>
