@@ -47,8 +47,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">Portfolio</h2>
-					<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+					<h2 class="section-heading">กิจกรรม</h2>
+					<h3 class="section-subheading text-muted">การทำกิจกรรมของชุมชนภายในโครงการ.</h3>
 				</div>
 			</div>
 			<div class="row">
@@ -59,11 +59,11 @@
 								<i class="fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img src="<?php echo base_url();?>assets/img/portfolio/roundicons.png" class="img-responsive" alt="">
+						<img src="<?php echo base_url();?>assets/img/show/pamong.jpg" class="img-responsive" alt="" style="height: 260px;">
 					</a>
 					<div class="portfolio-caption">
-						<h4>Round Icons</h4>
-						<p class="text-muted">Graphic Design</p>
+						<h4>การเลี้ยงปลาในบ่อพาสติก</h4>
+						<!-- <p class="text-muted">Graphic Design</p> -->
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -73,11 +73,11 @@
 								<i class="fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img src="<?php echo base_url();?>assets/img/portfolio/startup-framework.png" class="img-responsive" alt="">
+						<img src="<?php echo base_url();?>assets/img/show/pasusad.jpg" class="img-responsive" alt="" style="height: 260px;">
 					</a>
 					<div class="portfolio-caption">
-						<h4>Startup Framework</h4>
-						<p class="text-muted">Website Design</p>
+						<h4>การปศุสัตว์</h4>
+						<!-- <p class="text-muted">Website Design</p> -->
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -87,11 +87,11 @@
 								<i class="fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img src="<?php echo base_url();?>assets/img/portfolio/treehouse.png" class="img-responsive" alt="">
+						<img src="<?php echo base_url();?>assets/img/portfolio/treehouse.png" class="img-responsive" alt="" style="height: 260px;">
 					</a>
 					<div class="portfolio-caption">
-						<h4>Treehouse</h4>
-						<p class="text-muted">Website Design</p>
+						<h4>การทำปุ๋ยอินทรีย์</h4>
+						<!-- <p class="text-muted">Website Design</p> -->
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -104,8 +104,8 @@
 						<img src="<?php echo base_url();?>assets/img/portfolio/golden.png" class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
-						<h4>Golden</h4>
-						<p class="text-muted">Website Design</p>
+						<h4>การเพาะเห็ด</h4>
+						<!-- <p class="text-muted">Website Design</p> -->
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -139,9 +139,65 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- Portfolio-->
+	<!-- Question -->
+	<section id="question">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">ถาม - ตอบ</h2>
+					<h3 class="section-subheading text-muted">สังคมแห่งการแบ่งปัน และร่วมกันหาทางออกของปัญหาที่เกิดขึ้น.</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<?php echo form_open('#','name="sentMessage" id="contactForm1" novalidate');?>
+					<!-- <form name="sentMessage" id="contactForm1" novalidate> -->
+					<div class="row">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-6">
+							<table class="table-hover" border="1">
+								<tbody>
+									<tr>
+										<td>คำถาม</td>
+										<td></td>
+									</tr>
+									<tr>
+										<!-- <td></td> -->
+										<td colspan="2" class="col-sm-10">ตอบ</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="col-sm-10">ตอบ</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- <div class="col-md-6"> 
+							<div class="form-group">
+								<label for="question">คำถาม :</label>
+								<input type="text" class="form-control " placeholder=" คำถามของคุณ ? " name="question" id="question" required data-validation-required-message="Please enter your email address.">
+								<p class="help-block text-danger"></p>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password *" id="loginPassword" name="loginPassword" required data-validation-required-message="Please enter your phone number.">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div> -->
+						<!-- <div class="clearfix"></div> -->
+						<div class="col-lg-12 text-center">
+							<div id="success"></div>
+							<button type="submit" name="loginSubmit" class="btn btn-xl">ตกลง</button>
+						</div>
+					</div>
+					<!-- </form> -->
+					<?php echo form_close();?>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Question -->
 	<!-- About Section -->
-	<section id="about">
+	<section id="about" class="bg-light-gray">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -224,7 +280,7 @@
 	</section>
 
 	<!-- Team Section -->
-	<section id="team" class="bg-light-gray">
+	<section id="team" >
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -511,7 +567,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Contact Section -->
+	<!-- Login Section -->
 	<section id="login">
 		<div class="container">
 			<div class="row">
@@ -528,7 +584,7 @@
 						<div class="col-sm-3"></div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="email" class="form-control" placeholder="Your Email *" id="loginEmail" required data-validation-required-message="Please enter your email address." name="loginEmail">
+								<input type="email" class="form-control " placeholder="Your Email *" name="loginEmail" id="email" required data-validation-required-message="Please enter your email address.">
 								<p class="help-block text-danger"></p>
 							</div>
 							<div class="form-group">
@@ -548,7 +604,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Contact Section Register -->
+	<!-- regis Section Register -->
 	<section id="regis" class="well">
 		<div class="container">
 			<div class="row">
@@ -615,7 +671,7 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Project Details Go Here -->
-								<h2>Project Name</h2>
+								<h2>การเลี้ยงปลาในบ่อพาสติก</h2>
 								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<img class="img-responsive img-centered" src="<?php echo base_url();?>assets/img/portfolio/roundicons-free.png" alt="">
 								<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -649,10 +705,13 @@
 						<div class="row">
 							<div class="col-lg-8 col-lg-offset-2">
 								<div class="modal-body">
-									<h2>Project Heading</h2>
-									<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-									<img class="img-responsive img-centered" src="<?php echo base_url();?>assets/img/portfolio/startup-framework-preview.png" alt="">
-									<p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+									<h2>การปศุสัตว์</h2>
+									<p class="item-intro text-muted">การแปรรูปถนอมอาหารสัตว์.</p>
+									<img class="img-responsive img-centered" src="<?php echo base_url();?>assets/img/show/pasusad.jpg" alt="">
+									<div class="col-sm-4"><img class="img-responsive img-centered" src="<?php echo base_url();?>assets/img/about/4.jpg" alt=""></div>
+									<div class="col-sm-4"><img class="img-responsive img-centered" src="<?php echo base_url();?>assets/img/show/kasad.jpg" alt=""></div>
+									<div class="col-sm-4"><img class="img-responsive img-centered" src="<?php echo base_url();?>assets/img/header-bg.jpg" alt=""></div>
+									<p>การแปรรูปถนอมอาหารสัตว์ ไว้ใช้ในยามขาดแคลนหรือฤดูแล้งที่อาหารจำพวกพื้ชสดที่เป็นที่ต้องการของสัตว์ เช่น พวกโค กระบือ เราก็สามารถที่จะนำเอาอาหารที่เราแปรรูปจากพื้ชหรือเศษของพืชไร่ที่เราไม่ต้องการแล้วนำมาให้สัตว์เหล่านี้กินเป็นอาหารเสริมได้</p>
 									<p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
 									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
 								</div>

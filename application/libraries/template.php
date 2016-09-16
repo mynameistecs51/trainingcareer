@@ -166,7 +166,7 @@ public function menu()
 				<a class="page-scroll" href="#portfolio">Portfolio</a>
 			</li>
 			<li>
-				<a class="page-scroll" href="#">ถามตอบ</a>
+				<a class="page-scroll" href="#question">ถามตอบ</a>
 			</li>
 			<li>
 				<a class="page-scroll" href="#about">เกี่ยวกับ</a>
@@ -200,7 +200,7 @@ public function menu()
 			<a class="page-scroll" href="#portfolio">Portfolio</a>
 		</li>
 		<li>
-			<a class="page-scroll" href="#">ถามตอบ</a>
+			<a class="page-scroll" href="#question">ถามตอบ</a>
 		</li>
 		<li>
 			<a class="page-scroll" href="#about">เกี่ยวกับ</a>
