@@ -15,6 +15,18 @@ class Dashboard extends CI_Controller {
 		$this->data['controller'] = $this->ctl;
 		$this->mainPage();
 		$this->load->view($PAGE,$this->data);
+		$this->load->view('service',$this->data);
+		$this->load->view('activity',$this->data);
+		$this->load->view('question',$this->data);
+		$this->load->view('about',$this->data);
+		$this->load->view('team',$this->data);
+		$this->load->view('contact',$this->data);
+		if($this->session->userdata('id_member') != null){
+			echo '';
+		}else{
+			$this->load->view('login',$this->data);
+			$this->load->view('regis',$this->data);
+		}
 	}
 
 	public function mainPage()

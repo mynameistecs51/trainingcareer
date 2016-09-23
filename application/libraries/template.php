@@ -163,7 +163,7 @@ public function menu()
 				<a class="page-scroll" href="#services">ผลิตภัณฑ์</a>
 			</li>
 			<li>
-				<a class="page-scroll" href="#portfolio">Portfolio</a>
+				<a class="page-scroll" href="#activity">กิจกรรม</a>
 			</li>
 			<li>
 				<a class="page-scroll" href="#question">ถามตอบ</a>
@@ -197,7 +197,7 @@ public function menu()
 			<a class="page-scroll" href="#services">ผลิตภัณฑ์</a>
 		</li>
 		<li>
-			<a class="page-scroll" href="#portfolio">Portfolio</a>
+			<a class="page-scroll" href="#activity">กิจกรรม</a>
 		</li>
 		<li>
 			<a class="page-scroll" href="#question">ถามตอบ</a>
