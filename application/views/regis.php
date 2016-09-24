@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="row ">
-			<div class="col-lg-12">
+			<div class="col-sm-12">
 				<?php echo form_open('authen/regis','name="register" novalidate');?>
 				<!-- <form name="register" id="register" novalidate> -->
 				<div class="row">
@@ -37,7 +37,7 @@
 						</div>
 					</div>
 					<!-- <div class="clearfix"></div> -->
-					<div class="col-lg-12 text-center">
+					<div class="col-sm-12 text-center">
 						<div id="success"></div>
 						<button type="submit" name="regisSubmit" class="btn btn-xl">ตกลง</button>
 					</div>

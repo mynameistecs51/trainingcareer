@@ -8,14 +8,14 @@
 		 	</div>
 		 </div>
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-sm-12">
 				<?php echo form_open('authen/checkLogin','name="sentMessage" id="contactForm1" novalidate');?>
 				<!-- <form name="sentMessage" id="contactForm1" novalidate> -->
 				<div class="row">
 					<div class="col-sm-3"></div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<input type="email" class="form-control input-lg " placeholder="Your Email *" name="loginEmail" id="email" required data-validation-required-message="Please enter your email address." autofocus>
+							<input type="email" class="form-control input-lg " placeholder="Your Email *" name="loginEmail" id="email" required data-validation-required-message="Please enter your email address." >
 							<p class="help-block text-danger"></p>
 						</div>
 						<div class="form-group">
@@ -23,9 +23,10 @@
 							<p class="help-block text-danger"></p>
 						</div>
 					</div>
+					<div class="col-sm-3"></div>
 					<!-- <div class="clearfix"></div> -->
-					<div class="col-lg-12 text-center">
-						<div id="success"></div>
+					<div class="col-sm-12 text-center">
+						<!-- <div id="success"></div> -->
 						<button type="submit" name="loginSubmit" class="btn btn-xl">ตกลง</button>
 					</div>
 				</div>
